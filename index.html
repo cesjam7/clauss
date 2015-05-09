@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es" ng-app>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Tu Bootstrap de siempre con un poco de Material Design.">
+	<meta name="author" content="César Aquino Maximiliano @cesjam7">
+	<title>CLAUSS</title>
+	<!-- Bootstrap core CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<!-- Clauss core CSS -->
+	<link rel="stylesheet" href="css/clauss.css{{ active_clauss }}">
+	<!-- Otros archivos -->
+	<link rel="stylesheet" href="css/main.css">
+	<script src="https://google-code-prettify.googlecode.com/svn/trunk/src/prettify.js"></script>
+	<link rel="stylesheet" href="https://google-code-prettify.googlecode.com/svn/trunk/src/prettify.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+</head>
+<body onload="prettyPrint()">
+	<div class="cont">
+		<h1 class="cabecera center">Clauss</h1>
+		<p class="cabecera center">Tu Bootstrap de siempre con un poco de Material Design.<br>&nbsp;</p>
+		<p><input type="checkbox" id="active_clauss" ng-model="active_clauss" ng-true-value="'YES'" ng-false-value="''" /> <label for="active_clauss">Desactivar Clauss y dejar solo Bootstrap.</label></p>
+		<!-- Inicio Botones -->
+		<div class="botones">
+			<h3>Botones</h3>
+			<pre><code class="prettyprint lang-html">&lt;a class="btn btn-default" href="#" role="button"&gt;Link&lt;/a&gt;
+&lt;button class="btn btn-default" type="submit"&gt;Button&lt;/button&gt;
+&lt;input class="btn btn-default" type="button" value="Input"&gt;
+&lt;input class="btn btn-default" type="submit" value="Submit"&gt;</code></pre>
+			<div class="row">
+				<div class="col-md-12">
+					<a class="btn btn-default" href="#" role="button">Link</a> &nbsp;
+					<button class="btn btn-default" type="submit">Button</button> &nbsp;
+					<input class="btn btn-default" type="button" value="Input"> &nbsp;
+					<input class="btn btn-default" type="submit" value="Submit">
+				</div>
+			</div>
+			<h3>Botones con opciones</h3>
+			<pre><code class="prettyprint lang-html">&lt;button type="button" class="btn btn-default"&gt;Default&lt;/button&gt;
+&lt;button type="button" class="btn btn-primary"&gt;Primary&lt;/button&gt;
+&lt;button type="button" class="btn btn-success"&gt;Success&lt;/button&gt;
+&lt;button type="button" class="btn btn-info"&gt;Info&lt;/button&gt;
+&lt;button type="button" class="btn btn-warning"&gt;Warning&lt;/button&gt;
+&lt;button type="button" class="btn btn-danger"&gt;Danger&lt;/button&gt;</code></pre>
+			<div class="row">
+				<div class="col-md-12">
+					<button type="button" class="btn btn-default">Default</button> &nbsp;
+					<button type="button" class="btn btn-primary">Primary</button> &nbsp;
+					<button type="button" class="btn btn-success">Success</button> &nbsp;
+					<button type="button" class="btn btn-info">Info</button> &nbsp;
+					<button type="button" class="btn btn-warning">Warning</button> &nbsp;
+					<button type="button" class="btn btn-danger">Danger</button> &nbsp;
+				</div>
+			</div>
+			<h3>Botones sin caja</h3>
+			<pre><code class="prettyprint lang-html">&lt;button type="button" class="btn btn-default cl-flat"&gt;Default&lt;/button&gt;
+&lt;button type="button" class="btn btn-primary cl-flat"&gt;Primary&lt;/button&gt;
+&lt;button type="button" class="btn btn-success cl-flat"&gt;Success&lt;/button&gt;
+&lt;button type="button" class="btn btn-info cl-flat"&gt;Info&lt;/button&gt;
+&lt;button type="button" class="btn btn-warning cl-flat"&gt;Warning&lt;/button&gt;
+&lt;button type="button" class="btn btn-danger cl-flat"&gt;Danger&lt;/button&gt;</code></pre>
+			<div class="row">
+				<div class="col-md-12">
+					<button type="button" class="btn btn-default cl-flat">Default</button> &nbsp;
+					<button type="button" class="btn btn-primary cl-flat">Primary</button> &nbsp;
+					<button type="button" class="btn btn-success cl-flat">Success</button> &nbsp;
+					<button type="button" class="btn btn-info cl-flat">Info</button> &nbsp;
+					<button type="button" class="btn btn-warning cl-flat">Warning</button> &nbsp;
+					<button type="button" class="btn btn-danger cl-flat">Danger</button> &nbsp;
+				</div>
+			</div>
+			<h3>Tamaño de Botones</h3>
+			<pre><code class="prettyprint lang-html">&lt;p&gt;
+  &lt;button type="button" class="btn btn-primary btn-lg"&gt;Large button&lt;/button&gt;
+  &lt;button type="button" class="btn btn-default btn-lg"&gt;Large button&lt;/button&gt;
+&lt;/p&gt;
+&lt;p&gt;
+  &lt;button type="button" class="btn btn-primary"&gt;Default button&lt;/button&gt;
+  &lt;button type="button" class="btn btn-default"&gt;Default button&lt;/button&gt;
+&lt;/p&gt;
+&lt;p&gt;
+  &lt;button type="button" class="btn btn-primary btn-sm"&gt;Small button&lt;/button&gt;
+  &lt;button type="button" class="btn btn-default btn-sm"&gt;Small button&lt;/button&gt;
+&lt;/p&gt;
+&lt;p&gt;
+  &lt;button type="button" class="btn btn-primary btn-xs"&gt;Extra small button&lt;/button&gt;
+  &lt;button type="button" class="btn btn-default btn-xs"&gt;Extra small button&lt;/button&gt;
+&lt;/p&gt;</code></pre>
+			<div class="row">
+				<div class="col-md-12">
+					<p>
+						<button type="button" class="btn btn-primary btn-lg">Large button</button> &nbsp;
+						<button type="button" class="btn btn-default btn-lg">Large button</button>
+					</p>
+					<p>
+						<button type="button" class="btn btn-primary">Default button</button> &nbsp;
+						<button type="button" class="btn btn-default">Default button</button>
+					</p>
+					<p>
+						<button type="button" class="btn btn-primary btn-sm">Small button</button> &nbsp;
+						<button type="button" class="btn btn-default btn-sm">Small button</button>
+					</p>
+					<p>
+						<button type="button" class="btn btn-primary btn-xs">Extra small button</button> &nbsp;
+						<button type="button" class="btn btn-default btn-xs">Extra small button</button>
+					</p>
+				</div>
+			</div>
+			<pre><code class="prettyprint lang-html">&lt;button type="button" class="btn btn-primary btn-lg btn-block"&gt;Block level button&lt;/button&gt;
+&lt;button type="button" class="btn btn-default btn-lg btn-block"&gt;Block level button&lt;/button&gt;</code></pre>
+			<div class="row">
+				<div class="col-md-12">
+					<button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
+					<button type="button" class="btn btn-default btn-lg btn-block">Block level button</button>
+				</div>
+			</div>
+			<h3>Botón activado</h3>
+			<pre><code class="prettyprint lang-html">&lt;button type="button" class="btn btn-primary btn-lg active"&gt;Primary button&lt;/button&gt; &nbsp;
+&lt;button type="button" class="btn btn-default btn-lg active"&gt;Button&lt;/button&gt;</code></pre>
+			<div class="row">
+				<div class="col-md-12">
+					<button type="button" class="btn btn-primary btn-lg active">Primary button</button> &nbsp;
+					<button type="button" class="btn btn-default btn-lg active">Button</button>
+				</div>
+			</div>
+			<h3>Botón disabled</h3>
+			<pre><code class="prettyprint lang-html">&lt;button type="button" disabled="disabled" class="btn btn-default"&gt;Default&lt;/button&gt; &nbsp;
+&lt;button type="button" disabled="disabled" class="btn btn-primary"&gt;Primary&lt;/button&gt; &nbsp;
+&lt;button type="button" disabled="disabled" class="btn btn-success"&gt;Success&lt;/button&gt; &nbsp;
+&lt;button type="button" disabled="disabled" class="btn btn-info"&gt;Info&lt;/button&gt; &nbsp;
+&lt;button type="button" disabled="disabled" class="btn btn-warning"&gt;Warning&lt;/button&gt; &nbsp;
+&lt;button type="button" disabled="disabled" class="btn btn-danger"&gt;Danger&lt;/button&gt;</code></pre>
+			<div class="row">
+				<div class="col-md-12">
+					<button type="button" disabled="disabled" class="btn btn-default">Default</button> &nbsp;
+					<button type="button" disabled="disabled" class="btn btn-primary">Primary</button> &nbsp;
+					<button type="button" disabled="disabled" class="btn btn-success">Success</button> &nbsp;
+					<button type="button" disabled="disabled" class="btn btn-info">Info</button> &nbsp;
+					<button type="button" disabled="disabled" class="btn btn-warning">Warning</button> &nbsp;
+					<button type="button" disabled="disabled" class="btn btn-danger">Danger</button> &nbsp;
+				</div>
+			</div>
+		</div>
+		<!-- Fin Botones -->
+		<p>&nbsp;</p>
+		<p>Desarrollado por César J. Aquino Maximiliano <a href="http://twitter.com/cesjam7" target="blank">(@cesjam7)</a></p>
+	</div>
+</body>
+</html>

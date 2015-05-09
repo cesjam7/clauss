@@ -1,0 +1,99 @@
+* {
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+}
+body {
+  font-size: 16px;
+  color: #333;
+}
+.center {
+  text-align: center;
+}
+.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.cont {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.block {
+  display: block;
+}
+pre {
+  border-radius: 4px;
+  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+  background: #fff;
+  border: 1px solid #e5e5e5;
+}
+.btn {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  border-radius: 3px;
+  text-transform: uppercase;
+  min-width: 88px;
+  text-align: center;
+  font-weight: bold;
+  line-height: 36px;
+  padding: 0 6px;
+}
+.cl-flat {
+  background: transparent;
+  box-shadow: 0px 0px 0px transparent;
+  border: 0px;
+}
+.cl-flat:hover {
+  border-radius:0px;
+  background: #e6e6e6;
+}
+.btn-primary.cl-flat {
+  color: #337ab7;
+}
+.btn-success.cl-flat {
+  color: #449d44;
+}
+.btn-info.cl-flat {
+  color: #5bc0de;
+}
+.btn-warning.cl-flat {
+  color: #ec971f;
+}
+.btn-danger.cl-flat {
+  color: #ac2925;
+}
+.btn-lg {
+  padding: 0 20px;
+  line-height: 42px;
+}
+.btn-sm {
+  padding: 0px 10px;
+  line-height: 28px;
+}
+.btn-xs {
+  font-size: 11px;
+  line-height: 20px;
+}
+.btn[disabled] {
+  opacity: .7;
+}
+.btn-default[disabled] {
+  background: rgba(0,0,0,0.12);
+  color: rgba(0,0,0,0.26);
+}
+.btn-primary[disabled] {
+  color: #286297;
+}
+.btn-success[disabled] {
+  color: #399D39;
+}
+.btn-info[disabled] {
+  color: #4C95AA;
+}
+.btn-warning[disabled] {
+  color: #BC8333;
+}
+.btn-danger[disabled] {
+  color: #AA4440;
+}
