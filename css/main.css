@@ -19,6 +19,9 @@ body {
 .cabecera {
 	font-family: 'Lobster Two', cursive;
 }
+.example {
+	margin-bottom: 15px;
+}
 h1.cabecera {
 	font-size: 100px;
 	margin: 25px 0 20px;
