@@ -217,4 +217,49 @@ input[type=checkbox], input[type=radio] {
 .checkbox.cl-sm input[type=checkbox], .checkbox-inline.cl-sm input[type=checkbox], .radio.cl-sm input[type=radio], .radio-inline.cl-sm input[type=radio] {
   margin-top: 4px; }
 
+/*************************************
+************** TEXTOS ****************
+*************************************/
+h1, .h1 {
+  font-size: 48px; }
+
+h2, .h2 {
+  font-size: 40px; }
+
+h3, .h3 {
+  font-size: 32px; }
+
+h4, .h4 {
+  font-size: 24px; }
+
+h5, .h5 {
+  font-size: 18px; }
+
+h6 .h6 {
+  font-size: 13px; }
+
+p {
+  margin: 0 0 20px; }
+
+/*************************************
+************** ALERTAS ****************
+*************************************/
+.alert {
+  border-radius: 30px;
+  border: 0px;
+  color: #fff;
+  padding: 15px 30px; }
+
+.alert-success {
+  background: #76BE76; }
+
+.alert-info {
+  background: #5688A0; }
+
+.alert-warning {
+  background: #E0D852; }
+
+.alert-danger {
+  background: #CF5D5B; }
+
 /*# sourceMappingURL=clauss.css.map */

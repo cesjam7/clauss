@@ -10,18 +10,18 @@
 	<!-- Bootstrap core CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 	<!-- Clauss core CSS -->
-	<link rel="stylesheet" href="css/clauss.{{ active.clauss }}">
+	<link rel="stylesheet" href="css/clauss.css{{ active.clauss }}">
 	<!-- Otros archivos -->
 	<link rel="stylesheet" href="css/main.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"> 
 	<link rel="stylesheet" href="https://google-code-prettify.googlecode.com/svn/trunk/src/prettify.css">
 	<script src="https://google-code-prettify.googlecode.com/svn/trunk/src/prettify.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
 	<script>
 		angular.module('MyApp', [])
 		.controller('ActiveClauss', ['$scope', function($scope) {
 			$scope.active = {
-				clauss: 'css'
+				clauss: ''
 			};
 		}]);
 </script>
@@ -31,7 +31,7 @@
 		<h1 class="cabecera center">Clauss</h1>
 		<p class="cabecera center">Tu Bootstrap de siempre pero un "poco" diferente.<br>&nbsp;</p>
 		<label class="radio-inline">
-		<input type="radio" ng-model="active.clauss" value="css"> Usar Clauss sobre Bootstrap
+		<input type="radio" ng-model="active.clauss" value=""> Usar Clauss sobre Bootstrap
 		</label>
 		<label class="radio-inline">
 		<input type="radio" ng-model="active.clauss" value="other"> Usar solo Bootstrap
@@ -542,13 +542,77 @@
 	&lt;/div&gt;
   &lt;/div&gt;
 &lt;/form&gt;</code></pre>
+			
+			<!-- TÍTULOS -->
+			
+			<h3 id="textos">Títulos</h3>
+			<div class="example">
+				<h1>Ejemplo para títulos H1</h1>
+				<h2>Ejemplo para títulos H2</h2>
+				<h3>Ejemplo para títulos H3</h3>
+				<h4>Ejemplo para títulos H4</h4>
+				<h5>Ejemplo para títulos H5</h5>
+				<h6>Ejemplo para títulos H6</h6>
+			</div>
+			<div class="checkbox cl-sm">
+				<label>
+					<input type="checkbox" ng-model="show12"> Ver código
+				</label>
+			</div>
+			<pre ng-show="show12"><code class="prettyprint lang-html">&lt;h1&gt;Ejemplo para títulos H1&lt;/h1&gt;
+&lt;h2&gt;Ejemplo para títulos H2&lt;/h2&gt;
+&lt;h3&gt;Ejemplo para títulos H3&lt;/h3&gt;
+&lt;h4&gt;Ejemplo para títulos H4&lt;/h4&gt;
+&lt;h5&gt;Ejemplo para títulos H5&lt;/h5&gt;
+&lt;h6&gt;Ejemplo para títulos H6&lt;/h6&gt;</code></pre>
+			
+			<!-- PARRAFOS -->
+			
+			<h3 id="textos">Parrafos</h3>
+			<div class="example">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et ante erat. <strong>Nam mauris augue, consectetur non lacus laoreet</strong>, convallis cursus ex. Duis sed ex sit amet augue laoreet feugiat vel nec sem. Phasellus finibus vestibulum quam id imperdiet. <u>Vestibulum sed nisl placerat</u>, egestas eros nec, luctus odio.</p>
+				<p><em>Praesent mattis, erat eu lacinia feugiat, orci sapien fermentum metus, et ornare ipsum tortor nec arcu.</em> Mauris luctus venenatis volutpat. Integer rutrum auctor elementum. Suspendisse lobortis mattis velit sit amet condimentum. Mauris a elit posuere, condimentum augue sit amet, <s>scelerisque sem</s>. Mauris mattis dictum tincidunt. Quisque ac posuere nisi. <small>Nulla sodales eget felis sit amet dapibus.</small></p>
+			</div>
+			<div class="checkbox cl-sm">
+				<label>
+					<input type="checkbox" ng-model="show13"> Ver código
+				</label>
+			</div>
+			<pre ng-show="show13"><code class="prettyprint lang-html">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et ante erat. &lt;strong&gt;Nam mauris augue, consectetur non lacus laoreet&lt;/strong&gt;, convallis cursus ex. Duis sed ex sit amet augue laoreet feugiat vel nec sem. Phasellus finibus vestibulum quam id imperdiet. &lt;u&gt;Vestibulum sed nisl placerat&lt;/u&gt;, egestas eros nec, luctus odio.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Praesent mattis, erat eu lacinia feugiat, orci sapien fermentum metus, et ornare ipsum tortor nec arcu.&lt;/em&gt; Mauris luctus venenatis volutpat. Integer rutrum auctor elementum. Suspendisse lobortis mattis velit sit amet condimentum. Mauris a elit posuere, condimentum augue sit amet, &lt;s&gt;scelerisque sem&lt;/s&gt;. Mauris mattis dictum tincidunt. Quisque ac posuere nisi. &lt;small&gt;Nulla sodales eget felis sit amet dapibus.&lt;/small&gt;<&lt;/p&gt;</code></pre>
+			
+			<!-- ALERTAS -->
+			
+			<h3 id="alertas">Alertas</h3>
+			<div class="example">
+				<div class="alert alert-success" role="alert"><strong>¡Bien hecho!</strong> Usted lee con éxito este mensaje de alerta importante.</div>
+				<div class="alert alert-info" role="alert"><strong>¡Aviso!</strong> Esta alerta necesita su atención, pero no es super importante.</div>
+				<div class="alert alert-warning" role="alert"><strong>¡Advertencia!</strong> Mejor no intentarlo porque puede ocurrir algo extraño.</div>
+				<div class="alert alert-danger" role="alert"><strong>¡No puede ser!</strong> Cambia algunas cosas y trata de enviar de nuevo.</div>
+			</div>
+			<div class="checkbox cl-sm">
+				<label>
+					<input type="checkbox" ng-model="show14"> Ver código
+				</label>
+			</div>
+			<pre ng-show="show14"><code class="prettyprint lang-html">&lt;div class="alert alert-success" role="alert"&gt;&lt;strong&gt;¡Bien hecho!&lt;/strong&gt; Usted lee con éxito este mensaje de alerta importante.&lt;/div&gt;
+&lt;div class="alert alert-info" role="alert"&gt;&lt;strong&gt;¡Aviso!&lt;/strong&gt; Esta alerta necesita su atención, pero no es super importante.&lt;/div&gt;
+&lt;div class="alert alert-warning" role="alert"&gt;&lt;strong&gt;¡Advertencia!&lt;/strong&gt; Mejor no intentarlo porque puede ocurrir algo extraño.&lt;/div&gt;
+&lt;div class="alert alert-danger" role="alert"&gt;&lt;strong&gt;¡No puede ser!&lt;/strong&gt; Cambia algunas cosas y trata de enviar de nuevo.&lt;/div&gt;</code></pre>
+
+		<!-- FIN DE CODIGOS Y EJEMPLOS -->
+
 		</div>
+
+		<!-- INICIO DE SIDEBAR -->
+
 		<div class="col-md-3">
 			<nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm" data-spy="affix" data-offset-top="240" data-offset-bottom="100">
 				<ul class="nav bs-docs-sidenav">
 					<li><a href="#botones">Botones</a></li>
 					<li><a href="#formularios">Formularios</a></li>
 					<li><a href="#textos">Textos</a></li>
+					<li><a href="#alertas">Alertas</a></li>
 					<li><a href="#top">Subir</a></li>
 				</ul>
 
