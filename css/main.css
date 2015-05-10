@@ -1,23 +1,17 @@
-@import url(http://fonts.googleapis.com/css?family=Lobster+Two);
-body {
-	font-family: Open Sans;
-	background: #F5F5F5;
-}
 .center {
-  text-align: center;
+	text-align: center;
 }
 .aligncenter {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 .cont {
-  max-width: 1000px;
-  margin-left: auto;
-  margin-right: auto;
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
 }
 .cabecera {
-	font-family: 'Lobster Two', cursive;
 }
 .example {
 	margin-bottom: 15px;
@@ -37,4 +31,9 @@ h3 {
 }
 pre {
 	margin-bottom: 20px;
+}
+.dark {
+	background: #333;
+	padding: 10px;
+	border: 1px solid #111;
 }

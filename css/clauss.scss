@@ -1,11 +1,13 @@
+@import url("http://fonts.googleapis.com/css?family=Lato:300");
 * {
   -webkit-transition: all 0.4s ease;
   -moz-transition: all 0.4s ease;
   -o-transition: all 0.4s ease;
 }
 body {
-  font-size: 16px;
+  font-size: 20px;
   color: #333;
+  font-family: 'Lato', sans-serif;
 }
 .center {
   text-align: center;
@@ -29,10 +31,9 @@ body {
   border: 1px solid #111;
 }
 pre {
-  border-radius: 4px;
-  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+  border-radius: 10px;
   background: #fff;
-  border: 1px solid #e5e5e5;
+  border: 1px solid #ccc;
 }
 
 /*************************************
@@ -40,73 +41,141 @@ pre {
 *************************************/
 
 .btn {
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
-  border-radius: 3px;
+  border-radius: 20px;
+  border-width: 2px;
+  color: #5A5A5A;
+  background: transparent;
   text-transform: uppercase;
-  min-width: 88px;
-  text-align: center;
-  font-weight: bold;
+  min-width: 100px;
   line-height: 36px;
-  padding: 0 6px;
+  padding: 0 20px;
+  border-color: #ccc;
+  font-size: 16px;
+}
+.btn.focus, .btn:focus, .btn:hover, .btn-default.active, .btn-default.focus, .btn-default:active, .btn-default:focus, .btn-default:hover, .open>.dropdown-toggle.btn-default {
+  color: #FFF;
+  background-color: #ccc;
+  border-color: #ccc;
+}
+.btn-primary, .btn-primary[disabled] {
+  color: #2e6da4;
+  border-color: #337ab7;
+
+  &:hover {
+    background: #337ab7;
+    border-color: #337ab7;
+  }
+}
+.btn-success, .btn-success[disabled] {
+  color: #4cae4c;
+  border-color: #5cb85c;
+
+  &:hover {
+    background: #5cb85c;
+    border-color: #5cb85c;
+  }
+}
+.btn-info, .btn-info[disabled] {
+  color: #46b8da;
+  border-color: #5bc0de;
+
+  &:hover {
+    background: #5bc0de;
+    border-color: #5bc0de;
+  }
+}
+.btn-warning, .btn-warning[disabled] {
+  color: #eea236;
+  border-color: #f0ad4e;
+
+  &:hover {
+    background: #f0ad4e;
+    border-color: #f0ad4e;
+  }
+}
+.btn-danger, .btn-danger[disabled] {
+  color: #d43f3a;
+  border-color: #d9534f;
+
+  &:hover {
+    background: #d9534f;
+    border-color: #d9534f;
+  }
 }
 .cl-flat {
   background: transparent;
   box-shadow: 0px 0px 0px transparent;
   border: 0px;
-}
-.cl-flat:hover {
-  border-radius:0px;
-  background: #e6e6e6;
+
+  &:hover {
+    background: #e6e6e6;
+    color: #fff;
+  }
 }
 .btn-primary.cl-flat {
   color: #337ab7;
+
+  &:hover {
+    color: #fff;
+    background: #337ab7
+  }
 }
 .btn-success.cl-flat {
   color: #449d44;
+
+  &:hover {
+    color: #fff;
+    background: #449d44;
+  }
 }
 .btn-info.cl-flat {
   color: #5bc0de;
+
+  &:hover {
+    color: #fff;
+    background: #5bc0de;
+  }
 }
 .btn-warning.cl-flat {
   color: #ec971f;
+
+  &:hover {
+    color: #fff;
+    background: #ec971f;
+  }
 }
 .btn-danger.cl-flat {
   color: #ac2925;
+
+  &:hover {
+    color: #fff;
+    background: #ac2925;
+  }
 }
 .btn-lg {
-  padding: 0 20px;
-  line-height: 42px;
+  padding: 0 36px;
+  border-radius: 28px;
+  line-height: 46px;
+  font-size: 20px;
 }
 .btn-sm {
-  padding: 0px 10px;
+  padding: 0px 16px;
+  border-radius: 15px;
   line-height: 28px;
+  font-size: 14px;
 }
 .btn-xs {
   font-size: 11px;
   line-height: 20px;
+  padding: 0 12px;
+  border-radius: 10px;
 }
 .btn[disabled] {
   opacity: 0.7;
   cursor: not-allowed;
 }
-.btn-default[disabled] {
-  background: rgba(0,0,0,0.12);
-  color: rgba(0,0,0,0.26);
-}
-.btn-primary[disabled] {
-  color: #286297;
-}
-.btn-success[disabled] {
-  color: #399D39;
-}
-.btn-info[disabled] {
-  color: #4C95AA;
-}
-.btn-warning[disabled] {
-  color: #BC8333;
-}
-.btn-danger[disabled] {
-  color: #AA4440;
+.btn-primary[disabled], .btn-success[disabled], .btn-info[disabled], .btn-warning[disabled], .btn-danger[disabled] {
+  color: #FFF;
 }
 
 /*************************************
@@ -121,7 +190,8 @@ pre {
   box-shadow: 0px 0px 0px transparent;
   border-radius: 0;
   padding-left: 3px;
-  font-size: 16px;
+  font-size: 20px;
+  height: 38px;
 }
 .form-control:focus {
   outline: 0px;
@@ -129,7 +199,6 @@ pre {
 }
 .form-group label {
   font-weight: normal;
-  font-size: 12px;
 }
 textarea.form-control, select[multiple] {
   border: 1px solid #ccc;
@@ -141,6 +210,9 @@ textarea.form-control:focus {
 }
 .help-block {
   font-size: 13px;
+}
+.cl-dark .btn {
+  color: #C6C6C6
 }
 .cl-dark .form-control {
   color: #fff;
@@ -159,6 +231,7 @@ textarea.form-control:focus {
   position: absolute;
   font-size: 40px;
   margin-top: 10px;
+  color: #ccc;
 }
 .cl-icons label, .cl-icons .form-control {
   margin-left: 40px;
@@ -166,6 +239,6 @@ textarea.form-control:focus {
 .form-horizontal .control-label {
   padding-top: 12px;
 }
-.checkbox label {
-  font-size: 16px;
+input[type=checkbox], input[type=radio] {
+  margin: 8px 0 0;
 }
