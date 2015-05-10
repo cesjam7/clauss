@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Tu Bootstrap de siempre pero un 'poco' diferente.">
 	<meta name="author" content="César Aquino Maximiliano @cesjam7">
-	<title>CLAUSS</title>
+	<title>CLAUSS - Tu Bootstrap de siempre pero un "poco" diferente.</title>
 	<!-- Bootstrap core CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 	<!-- Clauss core CSS -->
@@ -38,24 +38,29 @@
 		</label>
 		<!-- Inicio Botones -->
 		<div class="botones">
+			
+			<!-- BOTONES -->
+			
 			<h3>Botones</h3>
-			<pre><code class="prettyprint lang-html">&lt;a class="btn" href="#" role="button"&gt;Link&lt;/a&gt;
-&lt;button class="btn" type="submit"&gt;Button&lt;/button&gt;
-&lt;input class="btn" type="button" value="Input"&gt;
-&lt;input class="btn" type="submit" value="Submit"&gt;</code></pre>
 			<div class="example">
 				<a class="btn" href="#" role="button">Link</a> &nbsp;
 				<button class="btn" type="submit">Button</button> &nbsp;
 				<input class="btn" type="button" value="Input"> &nbsp;
 				<input class="btn" type="submit" value="Submit">
 			</div>
+			<div class="checkbox cl-sm">
+				<label>
+					<input type="checkbox" ng-model="show1"> Ver código
+				</label>
+			</div>
+			<pre ng-show="show1"><code class="prettyprint lang-html">&lt;a class="btn" href="#" role="button"&gt;Link&lt;/a&gt;
+&lt;button class="btn" type="submit"&gt;Button&lt;/button&gt;
+&lt;input class="btn" type="button" value="Input"&gt;
+&lt;input class="btn" type="submit" value="Submit"&gt;</code></pre>
+			
+			<!-- BOTONES CON OPCIONES -->
+			
 			<h3>Botones con opciones</h3>
-			<pre><code class="prettyprint lang-html">&lt;button type="button" class="btn btn-default"&gt;Default&lt;/button&gt;
-&lt;button type="button" class="btn btn-primary"&gt;Primary&lt;/button&gt;
-&lt;button type="button" class="btn btn-success"&gt;Success&lt;/button&gt;
-&lt;button type="button" class="btn btn-info"&gt;Info&lt;/button&gt;
-&lt;button type="button" class="btn btn-warning"&gt;Warning&lt;/button&gt;
-&lt;button type="button" class="btn btn-danger"&gt;Danger&lt;/button&gt;</code></pre>
 			<div class="example">
 				<button type="button" class="btn btn-default">Default</button> &nbsp;
 				<button type="button" class="btn btn-primary">Primary</button> &nbsp;
@@ -64,13 +69,21 @@
 				<button type="button" class="btn btn-warning">Warning</button> &nbsp;
 				<button type="button" class="btn btn-danger">Danger</button> &nbsp;
 			</div>
+			<div class="checkbox cl-sm">
+				<label>
+					<input type="checkbox" ng-model="show2"> Ver código
+				</label>
+			</div>
+			<pre ng-show="show2"><code class="prettyprint lang-html">&lt;button type="button" class="btn btn-default"&gt;Default&lt;/button&gt;
+&lt;button type="button" class="btn btn-primary"&gt;Primary&lt;/button&gt;
+&lt;button type="button" class="btn btn-success"&gt;Success&lt;/button&gt;
+&lt;button type="button" class="btn btn-info"&gt;Info&lt;/button&gt;
+&lt;button type="button" class="btn btn-warning"&gt;Warning&lt;/button&gt;
+&lt;button type="button" class="btn btn-danger"&gt;Danger&lt;/button&gt;</code></pre>
+
+			<!-- BOTONES SIN CAJA -->
+			
 			<h3>Botones sin caja</h3>
-			<pre><code class="prettyprint lang-html">&lt;button type="button" class="btn btn-default cl-flat"&gt;Default&lt;/button&gt;
-&lt;button type="button" class="btn btn-primary cl-flat"&gt;Primary&lt;/button&gt;
-&lt;button type="button" class="btn btn-success cl-flat"&gt;Success&lt;/button&gt;
-&lt;button type="button" class="btn btn-info cl-flat"&gt;Info&lt;/button&gt;
-&lt;button type="button" class="btn btn-warning cl-flat"&gt;Warning&lt;/button&gt;
-&lt;button type="button" class="btn btn-danger cl-flat"&gt;Danger&lt;/button&gt;</code></pre>
 			<div class="example">
 				<button type="button" class="btn btn-default cl-flat">Default</button> &nbsp;
 				<button type="button" class="btn btn-primary cl-flat">Primary</button> &nbsp;
@@ -79,23 +92,21 @@
 				<button type="button" class="btn btn-warning cl-flat">Warning</button> &nbsp;
 				<button type="button" class="btn btn-danger cl-flat">Danger</button> &nbsp;
 			</div>
+			<div class="checkbox cl-sm">
+				<label>
+					<input type="checkbox" ng-model="show3"> Ver código
+				</label>
+			</div>
+			<pre ng-show="show3"><code class="prettyprint lang-html">&lt;button type="button" class="btn btn-default cl-flat"&gt;Default&lt;/button&gt;
+&lt;button type="button" class="btn btn-primary cl-flat"&gt;Primary&lt;/button&gt;
+&lt;button type="button" class="btn btn-success cl-flat"&gt;Success&lt;/button&gt;
+&lt;button type="button" class="btn btn-info cl-flat"&gt;Info&lt;/button&gt;
+&lt;button type="button" class="btn btn-warning cl-flat"&gt;Warning&lt;/button&gt;
+&lt;button type="button" class="btn btn-danger cl-flat"&gt;Danger&lt;/button&gt;</code></pre>
+			
+			<!-- TAMAÑO DE BOTONES -->
+			
 			<h3>Tamaño de Botones</h3>
-			<pre><code class="prettyprint lang-html">&lt;p&gt;
-  &lt;button type="button" class="btn btn-primary btn-lg"&gt;Large button&lt;/button&gt;
-  &lt;button type="button" class="btn btn-default btn-lg"&gt;Large button&lt;/button&gt;
-&lt;/p&gt;
-&lt;p&gt;
-  &lt;button type="button" class="btn btn-primary"&gt;Default button&lt;/button&gt;
-  &lt;button type="button" class="btn btn-default"&gt;Default button&lt;/button&gt;
-&lt;/p&gt;
-&lt;p&gt;
-  &lt;button type="button" class="btn btn-primary btn-sm"&gt;Small button&lt;/button&gt;
-  &lt;button type="button" class="btn btn-default btn-sm"&gt;Small button&lt;/button&gt;
-&lt;/p&gt;
-&lt;p&gt;
-  &lt;button type="button" class="btn btn-primary btn-xs"&gt;Extra small button&lt;/button&gt;
-  &lt;button type="button" class="btn btn-default btn-xs"&gt;Extra small button&lt;/button&gt;
-&lt;/p&gt;</code></pre>
 			<div class="example">
 				<p>
 					<button type="button" class="btn btn-primary btn-lg">Large button</button> &nbsp;
@@ -114,67 +125,59 @@
 					<button type="button" class="btn btn-default btn-xs">Extra small button</button>
 				</p>
 			</div>
+			<div class="checkbox cl-sm">
+				<label>
+					<input type="checkbox" ng-model="show4"> Ver código
+				</label>
+			</div>
+			<pre ng-show="show4"><code class="prettyprint lang-html">&lt;p&gt;
+  &lt;button type="button" class="btn btn-primary btn-lg"&gt;Large button&lt;/button&gt;
+  &lt;button type="button" class="btn btn-default btn-lg"&gt;Large button&lt;/button&gt;
+&lt;/p&gt;
+&lt;p&gt;
+  &lt;button type="button" class="btn btn-primary"&gt;Default button&lt;/button&gt;
+  &lt;button type="button" class="btn btn-default"&gt;Default button&lt;/button&gt;
+&lt;/p&gt;
+&lt;p&gt;
+  &lt;button type="button" class="btn btn-primary btn-sm"&gt;Small button&lt;/button&gt;
+  &lt;button type="button" class="btn btn-default btn-sm"&gt;Small button&lt;/button&gt;
+&lt;/p&gt;
+&lt;p&gt;
+  &lt;button type="button" class="btn btn-primary btn-xs"&gt;Extra small button&lt;/button&gt;
+  &lt;button type="button" class="btn btn-default btn-xs"&gt;Extra small button&lt;/button&gt;
+&lt;/p&gt;</code></pre>
+			
+			<!-- BOTONES BLOQUEADOS -->
+			
 			<h3>Botón disabled</h3>
-			<pre><code class="prettyprint lang-html">&lt;button type="button" disabled="disabled" class="btn btn-default"&gt;Default&lt;/button&gt; &nbsp;
+			<div class="example">
+				<button type="button" disabled="disabled" class="btn btn-default">Default</button> &nbsp;
+				<button type="button" disabled="disabled" class="btn btn-primary">Primary</button> &nbsp;
+				<button type="button" disabled="disabled" class="btn btn-success">Success</button> &nbsp;
+				<button type="button" disabled="disabled" class="btn btn-info">Info</button> &nbsp;
+				<button type="button" disabled="disabled" class="btn btn-warning">Warning</button> &nbsp;
+				<button type="button" disabled="disabled" class="btn btn-danger">Danger</button> &nbsp;
+			</div>
+			<div class="checkbox cl-sm">
+				<label>
+					<input type="checkbox" ng-model="show5"> Ver código
+				</label>
+			</div>
+			<pre ng-show="show5"><code class="prettyprint lang-html">&lt;button type="button" disabled="disabled" class="btn btn-default"&gt;Default&lt;/button&gt; &nbsp;
 &lt;button type="button" disabled="disabled" class="btn btn-primary"&gt;Primary&lt;/button&gt; &nbsp;
 &lt;button type="button" disabled="disabled" class="btn btn-success"&gt;Success&lt;/button&gt; &nbsp;
 &lt;button type="button" disabled="disabled" class="btn btn-info"&gt;Info&lt;/button&gt; &nbsp;
 &lt;button type="button" disabled="disabled" class="btn btn-warning"&gt;Warning&lt;/button&gt; &nbsp;
 &lt;button type="button" disabled="disabled" class="btn btn-danger"&gt;Danger&lt;/button&gt;</code></pre>
-		<div class="example">
-			<button type="button" disabled="disabled" class="btn btn-default">Default</button> &nbsp;
-			<button type="button" disabled="disabled" class="btn btn-primary">Primary</button> &nbsp;
-			<button type="button" disabled="disabled" class="btn btn-success">Success</button> &nbsp;
-			<button type="button" disabled="disabled" class="btn btn-info">Info</button> &nbsp;
-			<button type="button" disabled="disabled" class="btn btn-warning">Warning</button> &nbsp;
-			<button type="button" disabled="disabled" class="btn btn-danger">Danger</button> &nbsp;
-		</div>
 		</div>
 		<div class="formularios">
+			
+			<!-- CAMPOS BASICOS -->
+			
 			<h3>Campos Básicos</h3>
-			<pre><code class="prettyprint lang-html">&lt;div class="form-group"&gt;
-  &lt;label for="input1"&gt;Correo electrónico:&lt;/label&gt;
-  &lt;input type="email" id="input1" class="form-control" placeholder="Ingresa tu correo electrónico"&gt;
-&lt;/div&gt;
-&lt;div class="form-group"&gt;
-  &lt;label for="input2"&gt;Contraseña:&lt;/label&gt;
-  &lt;input type="password" id="input2" class="form-control" placeholder="Contraseña"&gt;
-&lt;/div&gt;
-&lt;div class="form-group"&gt;
-  &lt;label for="input2"&gt;Descripción:&lt;/label&gt;
-  &lt;textarea class="form-control" rows="3" placeholder="Ingresa una descripción"&gt;&lt;/textarea&gt;
-&lt;/div&gt;
-&lt;div class="form-group"&gt;
-  &lt;label for="input3"&gt;Seleccionar archivo&lt;/label&gt;
-  &lt;input type="file" id="input3"&gt;
-  &lt;p class="help-block"&gt;Ejemplo de texto de ayuda.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="checkbox"&gt;
-  &lt;label&gt;
-  	&lt;input type="checkbox"&gt; Marcar la opción
-  &lt;/label&gt;
-&lt;/div&gt;
-&lt;div class="checkbox disabled"&gt;
-  &lt;label&gt;
-  &lt;input type="checkbox" value="" disabled&gt; Opción bloqueada
-  &lt;/label&gt;
-&lt;/div&gt;
-&lt;div class="radio"&gt;
-  &lt;label&gt;
-  	&lt;input type="radio" name="optionsRadios" value="option1" checked&gt; Opción 1
-  &lt;/label&gt;
-&lt;/div&gt;
-&lt;div class="radio"&gt;
-  &lt;label&gt;
-  	&lt;input type="radio" name="optionsRadios" value="option2"&gt; Opción 2
-  &lt;/label&gt;
-&lt;/div&gt;
-&lt;div class="radio disabled"&gt;
-  &lt;label&gt;
-  	&lt;input type="radio" name="optionsRadios" value="option3" disabled&gt; Opción bloqueada
-  &lt;/label&gt;
-&lt;/div&gt;
-&lt;button type="submit" class="btn btn-default"&gt;Enviar&lt;/button&gt;</code></pre>
+
+			<!-- Formulario en sitios claros -->
+
 			<div class="example">
 				<form>
 					<div class="form-group">
@@ -222,13 +225,57 @@
 					<button type="submit" class="btn btn-default">Enviar</button>
 				</form>
 			</div>
-			<pre><code class="prettyprint lang-html">&lt;form class="cl-dark"&gt;
-  &lt;div class="form-group"&gt;
-    &lt;label for="input1"&gt;Correo electrónico:&lt;/label&gt;
-    &lt;input type="email" id="input1" class="form-control" placeholder="Ingresa tu correo electrónico"&gt;
-  &lt;/div&gt;
-  ...
-&lt;/form&gt;</code></pre>
+			<div class="checkbox cl-sm">
+				<label>
+					<input type="checkbox" ng-model="show6"> Ver código
+				</label>
+			</div>
+			<pre ng-show="show6"><code class="prettyprint lang-html">&lt;div class="form-group"&gt;
+  &lt;label for="input1"&gt;Correo electrónico:&lt;/label&gt;
+  &lt;input type="email" id="input1" class="form-control" placeholder="Ingresa tu correo electrónico"&gt;
+&lt;/div&gt;
+&lt;div class="form-group"&gt;
+  &lt;label for="input2"&gt;Contraseña:&lt;/label&gt;
+  &lt;input type="password" id="input2" class="form-control" placeholder="Contraseña"&gt;
+&lt;/div&gt;
+&lt;div class="form-group"&gt;
+  &lt;label for="input2"&gt;Descripción:&lt;/label&gt;
+  &lt;textarea class="form-control" rows="3" placeholder="Ingresa una descripción"&gt;&lt;/textarea&gt;
+&lt;/div&gt;
+&lt;div class="form-group"&gt;
+  &lt;label for="input3"&gt;Seleccionar archivo&lt;/label&gt;
+  &lt;input type="file" id="input3"&gt;
+  &lt;p class="help-block"&gt;Ejemplo de texto de ayuda.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="checkbox"&gt;
+  &lt;label&gt;
+  	&lt;input type="checkbox"&gt; Marcar la opción
+  &lt;/label&gt;
+&lt;/div&gt;
+&lt;div class="checkbox disabled"&gt;
+  &lt;label&gt;
+  &lt;input type="checkbox" value="" disabled&gt; Opción bloqueada
+  &lt;/label&gt;
+&lt;/div&gt;
+&lt;div class="radio"&gt;
+  &lt;label&gt;
+  	&lt;input type="radio" name="optionsRadios" value="option1" checked&gt; Opción 1
+  &lt;/label&gt;
+&lt;/div&gt;
+&lt;div class="radio"&gt;
+  &lt;label&gt;
+  	&lt;input type="radio" name="optionsRadios" value="option2"&gt; Opción 2
+  &lt;/label&gt;
+&lt;/div&gt;
+&lt;div class="radio disabled"&gt;
+  &lt;label&gt;
+  	&lt;input type="radio" name="optionsRadios" value="option3" disabled&gt; Opción bloqueada
+  &lt;/label&gt;
+&lt;/div&gt;
+&lt;button type="submit" class="btn btn-default"&gt;Enviar&lt;/button&gt;</code></pre>
+
+			<!-- Formulario en sitios oscuros -->
+
 			<div class="example dark">
 				<form class="cl-dark">
 					<div class="form-group">
@@ -276,14 +323,63 @@
 					<button type="submit" class="btn btn-default">Enviar</button>
 				</form>
 			</div>
+			<div class="checkbox cl-sm">
+				<label>
+					<input type="checkbox" ng-model="show7"> Ver código
+				</label>
+			</div>
+			<pre ng-show="show7"><code class="prettyprint lang-html">&lt;form class="cl-dark"&gt;
+    &lt;div class="form-group"&gt;
+	  &lt;label for="input1"&gt;Correo electrónico:&lt;/label&gt;
+	  &lt;input type="email" id="input1" class="form-control" placeholder="Ingresa tu correo electrónico"&gt;
+	&lt;/div&gt;
+	&lt;div class="form-group"&gt;
+	  &lt;label for="input2"&gt;Contraseña:&lt;/label&gt;
+	  &lt;input type="password" id="input2" class="form-control" placeholder="Contraseña"&gt;
+	&lt;/div&gt;
+	&lt;div class="form-group"&gt;
+	  &lt;label for="input2"&gt;Descripción:&lt;/label&gt;
+	  &lt;textarea class="form-control" rows="3" placeholder="Ingresa una descripción"&gt;&lt;/textarea&gt;
+	&lt;/div&gt;
+	&lt;div class="form-group"&gt;
+	  &lt;label for="input3"&gt;Seleccionar archivo&lt;/label&gt;
+	  &lt;input type="file" id="input3"&gt;
+	  &lt;p class="help-block"&gt;Ejemplo de texto de ayuda.&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;div class="checkbox"&gt;
+	  &lt;label&gt;
+	  	&lt;input type="checkbox"&gt; Marcar la opción
+	  &lt;/label&gt;
+	&lt;/div&gt;
+	&lt;div class="checkbox disabled"&gt;
+	  &lt;label&gt;
+	  &lt;input type="checkbox" value="" disabled&gt; Opción bloqueada
+	  &lt;/label&gt;
+	&lt;/div&gt;
+	&lt;div class="radio"&gt;
+	  &lt;label&gt;
+	  	&lt;input type="radio" name="optionsRadios" value="option1" checked&gt; Opción 1
+	  &lt;/label&gt;
+	&lt;/div&gt;
+	&lt;div class="radio"&gt;
+	  &lt;label&gt;
+	  	&lt;input type="radio" name="optionsRadios" value="option2"&gt; Opción 2
+	  &lt;/label&gt;
+	&lt;/div&gt;
+	&lt;div class="radio disabled"&gt;
+	  &lt;label&gt;
+	  	&lt;input type="radio" name="optionsRadios" value="option3" disabled&gt; Opción bloqueada
+	  &lt;/label&gt;
+	&lt;/div&gt;
+	&lt;button type="submit" class="btn btn-default"&gt;Enviar&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+			
+			<!-- CAMPOS DE SELECCION -->
+			
 			<h3>Campos de selección</h3>
-			<pre><code class="prettyprint lang-html">&lt;select class="form-control"&gt;
-  &lt;option&gt;Elige una opción&lt;/option&gt;
-  &lt;option&gt;2&lt;/option&gt;
-  &lt;option&gt;3&lt;/option&gt;
-  &lt;option&gt;4&lt;/option&gt;
-  &lt;option&gt;5&lt;/option&gt;
-&lt;/select&gt;</code></pre>
+
+			<!-- Combobox -->
+			
 			<div class="example">
 				<select class="form-control">
 					<option>Elige una opción</option>
@@ -293,13 +389,21 @@
 					<option>5</option>
 				</select>
 			</div>
-			<pre><code class="prettyprint lang-html">&lt;select multiple class="form-control"&gt;
-  &lt;option&gt;1&lt;/option&gt;
+			<div class="checkbox cl-sm">
+				<label>
+					<input type="checkbox" ng-model="show8"> Ver código
+				</label>
+			</div>
+			<pre ng-show="show8"><code class="prettyprint lang-html">&lt;select class="form-control"&gt;
+  &lt;option&gt;Elige una opción&lt;/option&gt;
   &lt;option&gt;2&lt;/option&gt;
   &lt;option&gt;3&lt;/option&gt;
   &lt;option&gt;4&lt;/option&gt;
   &lt;option&gt;5&lt;/option&gt;
 &lt;/select&gt;</code></pre>
+
+			<!-- Listados -->
+
 			<div class="example">
 				<select multiple class="form-control">
 					<option>1</option>
@@ -309,23 +413,23 @@
 					<option>5</option>
 				</select>
 			</div>
+			<div class="checkbox cl-sm">
+				<label>
+					<input type="checkbox" ng-model="show9"> Ver código
+				</label>
+			</div>
+			<pre ng-show="show9"><code class="prettyprint lang-html">&lt;select multiple class="form-control"&gt;
+  &lt;option&gt;1&lt;/option&gt;
+  &lt;option&gt;2&lt;/option&gt;
+  &lt;option&gt;3&lt;/option&gt;
+  &lt;option&gt;4&lt;/option&gt;
+  &lt;option&gt;5&lt;/option&gt;
+&lt;/select&gt;</code></pre>
+			
+			<!-- CAMPOS CON ICONOS -->
+			
 			<h3>Campos con íconos</h3>
 			<h6>* Usar icon-fonts, en este caso usamos Font Awesome</h6>
-			<pre><code class="prettyprint lang-html">&lt;div class="form-group cl-icons"&gt;
-  &lt;i class="fa fa-user"&gt;&lt;/i&gt;
-  &lt;label for="input3"&gt;Nombre Completo:&lt;/label&gt;
-  &lt;input type="email" id="input3" class="form-control" placeholder="Ingresa tu nombre completo"&gt;
-&lt;/div&gt;
-&lt;div class="form-group cl-icons"&gt;
-  &lt;i class="fa fa-map-marker"&gt;&lt;/i&gt;
-  &lt;label for="input5"&gt;Ubicación:&lt;/label&gt;
-  &lt;select class="form-control"&gt;
-    &lt;option&gt;Elige una ubicación&lt;/option&gt;
-    &lt;option&gt;Lima&lt;/option&gt;
-    &lt;option&gt;Jauja&lt;/option&gt;
-    &lt;option&gt;Pasco&lt;/option&gt;
-  &lt;/select&gt;
-&lt;/div&gt;</code></pre>
 			<div class="example">
 				<form>
 					<div class="form-group cl-icons">
@@ -350,35 +454,30 @@
 					</div>
 				</form>
 			</div>
+			<div class="checkbox cl-sm">
+				<label>
+					<input type="checkbox" ng-model="show10"> Ver código
+				</label>
+			</div>
+			<pre ng-show="show10"><code class="prettyprint lang-html">&lt;div class="form-group cl-icons"&gt;
+  &lt;i class="fa fa-user"&gt;&lt;/i&gt;
+  &lt;label for="input3"&gt;Nombre Completo:&lt;/label&gt;
+  &lt;input type="email" id="input3" class="form-control" placeholder="Ingresa tu nombre completo"&gt;
+&lt;/div&gt;
+&lt;div class="form-group cl-icons"&gt;
+  &lt;i class="fa fa-map-marker"&gt;&lt;/i&gt;
+  &lt;label for="input5"&gt;Ubicación:&lt;/label&gt;
+  &lt;select class="form-control"&gt;
+    &lt;option&gt;Elige una ubicación&lt;/option&gt;
+    &lt;option&gt;Lima&lt;/option&gt;
+    &lt;option&gt;Jauja&lt;/option&gt;
+    &lt;option&gt;Pasco&lt;/option&gt;
+  &lt;/select&gt;
+&lt;/div&gt;</code></pre>
+			
+			<!-- FORMULARIO HORIZONTAL -->
+			
 			<h3>Formulario Horizontal</h3>
-			<pre><code class="prettyprint lang-html">&lt;form class="form-horizontal"&gt;
-  &lt;div class="form-group"&gt;
-    &lt;label for="inputEmail3" class="col-sm-2 control-label"&gt;Email&lt;/label&gt;
-    &lt;div class="col-sm-10"&gt;
-      &lt;input type="email" class="form-control" id="inputEmail3" placeholder="Email"&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class="form-group"&gt;
-    &lt;label for="inputPassword3" class="col-sm-2 control-label"&gt;Password&lt;/label&gt;
-    &lt;div class="col-sm-10"&gt;
-      &lt;input type="password" class="form-control" id="inputPassword3" placeholder="Password"&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class="form-group"&gt;
-    &lt;div class="col-sm-offset-2 col-sm-10"&gt;
-      &lt;div class="checkbox"&gt;
-	    &lt;label&gt;
-		  &lt;input type="checkbox"&gt; Recordarme
-		&lt;/label&gt;
-	  &lt;/div&gt;
-	&lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class="form-group"&gt;
-	&lt;div class="col-sm-offset-2 col-sm-10"&gt;
-	  &lt;button type="submit" class="btn"&gt;Ingresar&lt;/button&gt;
-	&lt;/div&gt;
-  &lt;/div&gt;
-&lt;/form&gt;</code></pre>
 			<div class="example">
 				<form class="form-horizontal">
 					<div class="form-group">
@@ -409,6 +508,39 @@
 					</div>
 				</form>
 			</div>
+			<div class="checkbox cl-sm">
+				<label>
+					<input type="checkbox" ng-model="show11"> Ver código
+				</label>
+			</div>
+			<pre ng-show="show11"><code class="prettyprint lang-html">&lt;form class="form-horizontal"&gt;
+  &lt;div class="form-group"&gt;
+    &lt;label for="inputEmail3" class="col-sm-2 control-label"&gt;Email&lt;/label&gt;
+    &lt;div class="col-sm-10"&gt;
+      &lt;input type="email" class="form-control" id="inputEmail3" placeholder="Email"&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="form-group"&gt;
+    &lt;label for="inputPassword3" class="col-sm-2 control-label"&gt;Password&lt;/label&gt;
+    &lt;div class="col-sm-10"&gt;
+      &lt;input type="password" class="form-control" id="inputPassword3" placeholder="Password"&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="form-group"&gt;
+    &lt;div class="col-sm-offset-2 col-sm-10"&gt;
+      &lt;div class="checkbox"&gt;
+	    &lt;label&gt;
+		  &lt;input type="checkbox"&gt; Recordarme
+		&lt;/label&gt;
+	  &lt;/div&gt;
+	&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="form-group"&gt;
+	&lt;div class="col-sm-offset-2 col-sm-10"&gt;
+	  &lt;button type="submit" class="btn"&gt;Ingresar&lt;/button&gt;
+	&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/form&gt;</code></pre>
 		</div>
 		<!-- Fin Botones -->
 		<p>&nbsp;</p>
