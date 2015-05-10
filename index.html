@@ -27,7 +27,7 @@
 </script>
 </head>
 <body onload="prettyPrint()">
-	<div class="cont">
+	<div class="cont" id="top">
 		<h1 class="cabecera center">Clauss</h1>
 		<p class="cabecera center">Tu Bootstrap de siempre pero un "poco" diferente.<br>&nbsp;</p>
 		<label class="radio-inline">
@@ -36,12 +36,15 @@
 		<label class="radio-inline">
 		<input type="radio" ng-model="active.clauss" value="other"> Usar solo Bootstrap
 		</label>
-		<!-- Inicio Botones -->
-		<div class="botones">
+
+	<!-- INICIO DE CODIGOS Y EJEMPLOS -->
+	
+	<div class="row">
+		<div class="col-md-9">
 			
 			<!-- BOTONES -->
 			
-			<h3>Botones</h3>
+			<h3 id="botones">Botones</h3>
 			<div class="example">
 				<a class="btn" href="#" role="button">Link</a> &nbsp;
 				<button class="btn" type="submit">Button</button> &nbsp;
@@ -169,12 +172,10 @@
 &lt;button type="button" disabled="disabled" class="btn btn-info"&gt;Info&lt;/button&gt; &nbsp;
 &lt;button type="button" disabled="disabled" class="btn btn-warning"&gt;Warning&lt;/button&gt; &nbsp;
 &lt;button type="button" disabled="disabled" class="btn btn-danger"&gt;Danger&lt;/button&gt;</code></pre>
-		</div>
-		<div class="formularios">
 			
 			<!-- CAMPOS BASICOS -->
 			
-			<h3>Campos Básicos</h3>
+			<h3 id="formularios">Campos Básicos</h3>
 
 			<!-- Formulario en sitios claros -->
 
@@ -542,9 +543,23 @@
   &lt;/div&gt;
 &lt;/form&gt;</code></pre>
 		</div>
-		<!-- Fin Botones -->
+		<div class="col-md-3">
+			<nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm" data-spy="affix" data-offset-top="240" data-offset-bottom="100">
+				<ul class="nav bs-docs-sidenav">
+					<li><a href="#botones">Botones</a></li>
+					<li><a href="#formularios">Formularios</a></li>
+					<li><a href="#textos">Textos</a></li>
+					<li><a href="#top">Subir</a></li>
+				</ul>
+
+			</nav>
+		</div>
+	</div>
+	<!-- FIN DE CODIGOS Y EJEMPLOS -->
 		<p>&nbsp;</p>
 		<p>Desarrollado por César J. Aquino Maximiliano <a href="http://twitter.com/cesjam7" target="blank">(@cesjam7)</a></p>
 	</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 </body>
 </html>

@@ -38,3 +38,7 @@ pre {
 	padding: 10px;
 	border: 1px solid #111;
 }
+.bs-docs-sidebar.affix {
+	top: 20px;
+	position: fixed !important;
+}
